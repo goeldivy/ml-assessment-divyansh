@@ -31,3 +31,37 @@ From a business perspective, this model helps in forecasting sales, planning inv
 Across all tasks, machine learning techniques provided valuable insights into healthcare prediction, customer behavior, and retail sales forecasting. These models help organizations make informed decisions, reduce risks, and improve performance.
 
 The integration of data preprocessing, modeling, and evaluation ensures that the solutions are reliable and applicable in real-world scenarios. Overall, the use of machine learning enhances efficiency, accuracy, and strategic planning in business environments.
+# Business Case Analysis
+
+## B1 (a)
+Target variable: items_sold  
+Features: promotion_type, store_size, location_type, competition_density, etc.  
+This is a regression problem because the output is continuous.
+
+## B1 (b)
+Items sold is better than revenue because it reflects actual demand independent of pricing.
+
+## B1 (c)
+Use separate models for different store types or include location as feature.
+
+## B2 (a)
+Join datasets using store_id and date. Final dataset: one row per store per day.
+
+## B2 (b)
+EDA:
+- Sales distribution
+- Promotion vs sales
+- Store size impact
+- Seasonal trends
+
+## B2 (c)
+Imbalance can bias model. Use sampling or weighted models.
+
+## B3 (a)
+Use time-based split. Metrics: RMSE, MAE.
+
+## B3 (b)
+Feature importance shows why promotions differ across months.
+
+## B3 (c)
+Save model using joblib, monitor performance, retrain periodically.
